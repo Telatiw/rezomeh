@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles/output.css">
     <title>my Rezomeh</title>
 </head>
-<body class="flex justify-center bg-smoke">
+
+<body class="flex flex-col justify-center bg-smoke">
     <svg class="hidden">
         <symbol id="twiter" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
             <path
@@ -21,20 +22,25 @@
             </path>
             <path d="m11 11.73-2.87 4.96 1.73 1 3-5.2c.09-.15.13-.32.13-.5v-6h-2v5.73Z"></path>
         </symbol>
-        <symbol id="faceBook" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-            viewBox="0 0 256 256">
+        <symbol id="faceBook" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
             <path
                 d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
             </path>
         </symbol>
         <symbol id="youtube" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
-            <path d="M164.44,121.34l-48-32A8,8,0,0,0,104,96v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,145.05V111l25.58,17ZM234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-15.49,113a8,8,0,0,1-4.77,5.49c-31.65,12.22-85.48,12-86,12H128c-.54,0-54.33.2-86-12a8,8,0,0,1-4.77-5.49C34.8,173.39,32,156.57,32,128s2.8-45.39,5.16-54.47A8,8,0,0,1,41.93,68c30.52-11.79,81.66-12,85.85-12h.27c.54,0,54.38-.18,86,12a8,8,0,0,1,4.77,5.49C221.2,82.61,224,99.43,224,128S221.2,173.39,218.84,182.47Z"></path>
+            <path
+                d="M164.44,121.34l-48-32A8,8,0,0,0,104,96v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,145.05V111l25.58,17ZM234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-15.49,113a8,8,0,0,1-4.77,5.49c-31.65,12.22-85.48,12-86,12H128c-.54,0-54.33.2-86-12a8,8,0,0,1-4.77-5.49C34.8,173.39,32,156.57,32,128s2.8-45.39,5.16-54.47A8,8,0,0,1,41.93,68c30.52-11.79,81.66-12,85.85-12h.27c.54,0,54.38-.18,86,12a8,8,0,0,1,4.77,5.49C221.2,82.61,224,99.43,224,128S221.2,173.39,218.84,182.47Z">
+            </path>
         </symbol>
         <symbol id="ball" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
-            <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm87.65,96.18Q211.83,120,208,120a168.58,168.58,0,0,0-43.94,5.84A166.52,166.52,0,0,0,150.61,96a168.32,168.32,0,0,0,38.2-31.55A87.78,87.78,0,0,1,215.65,120.18ZM176.28,54.46A151.75,151.75,0,0,1,142,82.52a169.22,169.22,0,0,0-38.63-39,88,88,0,0,1,73,10.94ZM85.65,50.88a153.13,153.13,0,0,1,42,39.18A151.82,151.82,0,0,1,64,104a154.19,154.19,0,0,1-20.28-1.35A88.39,88.39,0,0,1,85.65,50.88ZM40,128a87.73,87.73,0,0,1,.53-9.64A168.85,168.85,0,0,0,64,120a167.84,167.84,0,0,0,72.52-16.4,150.82,150.82,0,0,1,12.31,27.13,167.11,167.11,0,0,0-24.59,11.6,169.22,169.22,0,0,0-55.07,51.06A87.8,87.8,0,0,1,40,128Zm42,75a152.91,152.91,0,0,1,50.24-46.79,148.81,148.81,0,0,1,20.95-10,152.48,152.48,0,0,1,3.73,33.47,152.93,152.93,0,0,1-3.49,32.56A87.92,87.92,0,0,1,82,203Zm89.06,1.73a170,170,0,0,0,1.86-25,168.69,168.69,0,0,0-4.45-38.47A152.31,152.31,0,0,1,208,136q3.8,0,7.61.19A88.13,88.13,0,0,1,171.06,204.72Z"></path>
+            <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm87.65,96.18Q211.83,120,208,120a168.58,168.58,0,0,0-43.94,5.84A166.52,166.52,0,0,0,150.61,96a168.32,168.32,0,0,0,38.2-31.55A87.78,87.78,0,0,1,215.65,120.18ZM176.28,54.46A151.75,151.75,0,0,1,142,82.52a169.22,169.22,0,0,0-38.63-39,88,88,0,0,1,73,10.94ZM85.65,50.88a153.13,153.13,0,0,1,42,39.18A151.82,151.82,0,0,1,64,104a154.19,154.19,0,0,1-20.28-1.35A88.39,88.39,0,0,1,85.65,50.88ZM40,128a87.73,87.73,0,0,1,.53-9.64A168.85,168.85,0,0,0,64,120a167.84,167.84,0,0,0,72.52-16.4,150.82,150.82,0,0,1,12.31,27.13,167.11,167.11,0,0,0-24.59,11.6,169.22,169.22,0,0,0-55.07,51.06A87.8,87.8,0,0,1,40,128Zm42,75a152.91,152.91,0,0,1,50.24-46.79,148.81,148.81,0,0,1,20.95-10,152.48,152.48,0,0,1,3.73,33.47,152.93,152.93,0,0,1-3.49,32.56A87.92,87.92,0,0,1,82,203Zm89.06,1.73a170,170,0,0,0,1.86-25,168.69,168.69,0,0,0-4.45-38.47A152.31,152.31,0,0,1,208,136q3.8,0,7.61.19A88.13,88.13,0,0,1,171.06,204.72Z">
+            </path>
         </symbol>
         <symbol id="instagram" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256">
-            <path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+            <path
+                d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+            </path>
         </symbol>
     </svg>
     <header class="w-[90%]">
@@ -65,13 +71,13 @@
                 </svg>
             </div>
         </nav>
-        <div class=" flex mt-20">
-            <div class="w-1/2 flex justify-end h-96 items-end">
-                <div class="flex gap-5 items-center mr-5 bg-white p-3 rounded-lg">
+        <div class=" flex mt-20 ">
+            <div class="w-1/2 flex relative justify-end h-96 items-end">
+                <div class="flex gap-5 w-56 h-28 items-center mr-8 mb-5 bg-white p-3 rounded-lg">
                     <img src="files/Pocket Watch.png" alt="watch">
-                    <div class="flex flex-col">
-                        <span>250+</span>
-                        <span>Projects Done</span>
+                    <div class="flex gap-3 flex-col">
+                        <span class="font-medium text-2xl ">250+</span>
+                        <span class="font-light text-sm tracking-widest">Projects Done</span>
                     </div>
                 </div>
             </div>
@@ -89,6 +95,53 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="bg-white w-full py-[85px] px-[40px] grid grid-cols-4">
+            <div class="col-span-2 flex flex-col gap-5">
+                <h3 class="font-medium font-semibold text-5xl ">What I Do?</h3>
+                <p class="text-2xl leading-12 text-gary mt-14">Duis mollis est commodo luctus nisi erat porttitor ligula, eget lacinia
+                    odio sem nec elit. Nullam quis risus eget urna mollis ornare vel. Nulla vitae elit libero, a
+                    pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl.</p>
+            </div>
+            <div class="col-span-2 flex flex-col gap-12">
+                <div class="flex flex-col gap-3">
+                    <div class="flex justify-between w-full">
+                        <span class="text-base font-medium">Web Design</span><span class="font-medium text-gary">100 %</span>
+                    </div>
+                    <div class="flex">
+                        <div class="bg-purple w-full h-1 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="flex justify-between w-full">
+                        <span class="text-base font-medium">Mobile Design</span><span class="font-medium text-gary">80 %</span>
+                    </div>
+                    <div class="flex">
+                        <div class="bg-blu w-[80%] h-1 rounded-l-full"></div>
+                        <div class="bg-grayNormal h-1 w-[20%] rounded-r-full"></div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="flex justify-between w-full">
+                        <span class="text-base font-medium">Development</span><span class="font-medium text-gary">85 %</span>
+                    </div>
+                    <div class="flex">
+                        <div class="bg-green w-[85%] h-1 rounded-l-full"></div>
+                        <div class="bg-grayNormal h-1 w-[15%] rounded-r-full"></div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="flex justify-between w-full">
+                        <span class="text-base font-medium">SEO</span><span class="font-medium text-gary">90 %</span>
+                    </div>
+                    <div class="flex">
+                        <div class="bg-pinkNormal w-[90%] h-1 rounded-l-full"></div>
+                        <div class="bg-grayNormal h-1 w-[10%] rounded-r-full"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="Js/App.js"></script>
 </body>
 

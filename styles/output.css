@@ -197,6 +197,9 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .row-auto {
+    grid-row: auto;
+  }
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
@@ -241,6 +244,10 @@
   }
   .table {
     display: table;
+  }
+  .size-\[100px\] {
+    width: 100px;
+    height: 100px;
   }
   .h-1 {
     height: calc(var(--spacing) * 1);
@@ -311,6 +318,18 @@
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+  .grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+  .grid-rows-\[2fr_1fr_1fr\] {
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+  .grid-rows-\[500px_1fr_1fr\] {
+    grid-template-rows: 500px 1fr 1fr;
+  }
+  .grid-rows-\[auto_1fr-1fr\] {
+    grid-template-rows: auto 1fr-1fr;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -346,6 +365,9 @@
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
+  }
+  .gap-y-5 {
+    row-gap: calc(var(--spacing) * 5);
   }
   .rounded-4xl {
     border-radius: var(--radius-4xl);
@@ -417,8 +439,14 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
   .py-\[85px\] {
     padding-block: 85px;
+  }
+  .text-center {
+    text-align: center;
   }
   .text-2xl {
     font-size: var(--text-2xl);

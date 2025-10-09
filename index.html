@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles/output.css">
     <title>my Rezomeh</title>
 </head>
@@ -36,18 +36,21 @@
                 d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
             </path>
         </symbol>
+        <symbol id="menubar"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" />
+        </symbol>
     </svg>
-    <header class="w-[90%]">
-        <nav class="menuBar flex justify-between  items-center mt-5 bg-white rounded-lg p-5 w-full h-24 ">
-            <span class="text-5xl font-bold">JULIA</span>
-            <ul class="flex gap-5 justify-between text-xl font-medium w-[467px]">
+    <header class="w-[90%] || max-sm:w-full">
+        <nav class="menuBar flex justify-between  items-center mt-5 bg-white rounded-lg p-5 w-full h-24 || max-sm:shadow-md max-sm:rounded-none max-sm:h-20 max-sm:mt-0 ">
+            <span class="text-5xl font-bold || max-sm:text-2xl">JULIA</span>
+            <ul class=  "flex gap-5 justify-between text-xl font-medium w-[467px] max-sm:hidden">
                 <li>Home</li>
                 <li>About</li>
                 <li>Projects</li>
                 <li>Blog</li>
                 <li>Contant</li>
             </ul>
-            <div class="flex gap-5">
+            <div class="flex gap-5 max-sm:hidden">
                 <svg class="w-8 h-8 ">
                     <use href="#instagram"></use>
                 </svg>
@@ -64,9 +67,12 @@
                     <use href="#youtube"></use>
                 </svg>
             </div>
+            <svg class="w-8 h-8 hidden || max-sm:block">
+                <use href="#menubar"></use>
+            </svg>
         </nav>
-        <div class=" flex mt-20 ">
-            <div class="w-1/2 flex relative justify-end h-96 items-end">
+        <div class=" flex mt-20 || max-sm:flex-col-reverse max-sm:pb-6 ">
+            <div class="w-1/2 flex relative justify-end h-96 items-end || max-sm:hidden">
                 <div class="flex gap-5 w-56 h-28 items-center mr-8 mb-5 bg-white p-3 rounded-lg">
                     <img src="files/Pocket Watch.png" alt="watch">
                     <div class="flex gap-3 flex-col">
@@ -75,9 +81,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-14 w-1/2">
-                <h3 class="font-medium text-5xl">I'm User Interface Designer & Developer</h3>
-                <p class="text-2xl font-medium text-gary">Hello! I'm Julia, a freelance user interface designer &
+            <div class="flex flex-col gap-14 w-1/2 || max-sm:w-full max-sm:items-center max-sm:gap-5">
+                <h3 class="font-medium text-5xl || max-sm:text-2xl max-sm:text-center max-sm:w-64">I'm User Interface Designer & Developer</h3>
+                <p class="text-2xl font-medium text-gary || max-sm:w-80 max-sm:text-sm max-sm:text-center">Hello! I'm Julia, a freelance user interface designer &
                     developer based in London. I’m very passionate about the work that I do.</p>
                 <div class="flex gap-5 justify-center">
                     <button class="rounded-4xl w-32 h-12 bg-pink text-white text-base font-semibold">See My
@@ -89,7 +95,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="hidden">
         <section class="bg-white w-full py-[85px] px-[40px] grid grid-rows-[2fr_1fr_1fr] gap-5 grid-cols-4">
             <div class="col-span-2 flex flex-col gap-5">
                 <h3 class="font-semibold text-5xl ">What I Do?</h3>
@@ -226,7 +232,7 @@
             </div>
         </section>
     </main>
-    <footer class="w-full flex flex-col gap-10 h-[472px] px-8 py-11">
+    <footer class=" w-full hidden flex-col gap-10 h-[472px] px-8 py-11">
         <div class="flex gap-5  w-full h-[340px] bg-pinkLight px-8 py-11">
             <div class="flex flex-col w-[60%] gap-3">
                 <img class="w-14 h-14" src="files/Envelope.png">
@@ -236,11 +242,10 @@
             </div>
             <div class="flex w-[40%] flex-col gap-3">
                 <div class="flex w-full gap-5 justify-between">
-                    <input class="p-1 w-full h-10 bg-white rounded-sm" type="text" placeholder="firstName">
+                    <input  class="p-1 w-full h-10 bg-white rounded-sm" type="text" placeholder="firstName">
                     <input class="p-1 w-full h-10 bg-white rounded-sm" type="text" placeholder="LastName">
                 </div>
                 <textarea class="bg-white resize-none outline-0 p-1 fill-neutral-50" cols="30" rows="9"></textarea>
-                <button></button>
             </div>
         </div>
         <div class="flex w-full justify-between">

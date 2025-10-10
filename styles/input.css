@@ -7,10 +7,12 @@
     --color-semiGray: #8D8D8D;
     --color-pink: #D16B86;
     --color-pinkNormal: #E3A6B6;
+    --color-lightPurple: #F8F5FB; 
     --color-purple: #C7B1DD;
     --color-darkPurple: #65145C;
-    --color-blu: #8CAEEC;
     --color-green: #B0D4C1;
+    --color-lightBlu: #F1F5FD;
+    --color-blu: #8CAEEC;
     --color-bluDark: #2D22C7;
     --color-pinkLight: #F4D9EA;
 }

@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="styles/animate.css">
     <title>my Rezomeh</title>
 </head>
 
@@ -57,8 +58,7 @@
         </symbol>
     </svg>
     <header class="w-[90%] || max-sm:w-full">
-        <nav
-            class="menuBar flex justify-between  items-center mt-5 bg-white rounded-lg p-5 w-full h-24 || max-sm:shadow-md max-sm:rounded-none max-sm:h-20 max-sm:mt-0 ">
+        <nav class="wow animate__animated animate__flipInX menuBar flex justify-between  items-center mt-5 bg-white rounded-lg p-5 w-full h-24 || max-sm:shadow-md max-sm:rounded-none max-sm:h-20 max-sm:mt-0 ">
             <span class="text-5xl font-bold || max-sm:text-2xl">JULIA</span>
             <ul class="flex gap-5 justify-between text-xl font-medium w-[467px] max-sm:hidden">
                 <li>Home</li>
@@ -91,7 +91,7 @@
         <div class=" flex mt-20 || max-sm:flex-col-reverse max-sm:pb-6 ">
             <div class="w-1/2 flex relative justify-end h-96 items-end || max-sm:hidden">
                 <div class="flex gap-5 w-56 h-28 items-center mr-8 mb-5 bg-white p-3 rounded-lg">
-                    <img src="files/Pocket Watch.png" alt="watch">
+                    <img class="wow animate__animated animate__swing" src="files/Pocket Watch.png" alt="watch">
                     <div class="flex gap-3 flex-col">
                         <span class="font-medium text-2xl ">250+</span>
                         <span class="font-light text-sm tracking-widest">Projects Done</span>
@@ -99,7 +99,7 @@
                 </div>
             </div>
             <div class="flex flex-col gap-14 w-1/2 || max-sm:w-full max-sm:items-center max-sm:gap-5">
-                <h3 class="font-medium text-5xl || max-sm:text-2xl max-sm:text-center max-sm:w-64">I'm User Interface
+                <h3 class="font-medium text-5xl || max-sm:text-2xl max-sm:text-center max-sm:w-64 wow animate__animated animate__zoomIn ">I'm User Interface
                     Designer & Developer</h3>
                 <p class="text-2xl font-medium text-gary || max-sm:w-80 max-sm:text-sm max-sm:text-center">Hello! I'm
                     Julia, a freelance user interface designer &
@@ -115,16 +115,18 @@
         </div>
     </header>
     <main class="max-sm:w-full ||">
-        <section class="bg-white w-full py-[85px] px-[40px] grid gap-5 grid-cols-4 || max-sm:flex max-sm:flex-col max-sm:py-4 ">
+        <section
+            class="bg-white w-full py-[85px] px-[40px] grid gap-5 grid-cols-4 || max-sm:flex max-sm:flex-col max-sm:py-4 ">
             <div class="col-span-2 flex flex-col gap-5">
                 <h3 class="font-semibold text-5xl || max-sm:text-4xl ">What I Do?</h3>
-                <p class="text-2xl leading-12 text-gary mt-14 || max-sm:mt-3 max-sm:text-xl max-sm:leading-5">Duis mollis est commodo luctus nisi erat porttitor
+                <p class="text-2xl leading-12 text-gary mt-14 || max-sm:mt-3 max-sm:text-xl max-sm:leading-5">Duis
+                    mollis est commodo luctus nisi erat porttitor
                     ligula, eget lacinia
                     odio sem nec elit. Nullam quis risus eget urna mollis ornare vel. Nulla vitae elit libero, a
                     pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl.</p>
             </div>
             <div class="col-span-2 flex flex-col gap-12 py-12 || max-sm:py-5">
-                <div class="flex flex-col gap-3">
+                <div class="wow animate__animated animate__slideInRight flex flex-col gap-3">
                     <div class="flex justify-between w-full">
                         <span class="text-base font-medium">Web Design</span><span class="font-medium text-gary">100
                             %</span>
@@ -133,7 +135,7 @@
                         <div class="bg-purple w-full h-1 rounded-full"></div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-3">
+                <div class="wow animate__animated animate__slideInRight flex flex-col gap-3">
                     <div class="flex justify-between w-full">
                         <span class="text-base font-medium">Mobile Design</span><span class="font-medium text-gary">80
                             %</span>
@@ -143,7 +145,7 @@
                         <div class="bg-grayNormal h-1 w-[20%] rounded-r-full"></div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-3">
+                <div class="wow animate__animated animate__slideInRight flex flex-col gap-3">
                     <div class="flex justify-between w-full">
                         <span class="text-base font-medium">Development</span><span class="font-medium text-gary">85
                             %</span>
@@ -153,7 +155,7 @@
                         <div class="bg-grayNormal h-1 w-[15%] rounded-r-full"></div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-3">
+                <div class="wow animate__animated animate__slideInRight flex flex-col gap-3">
                     <div class="flex justify-between w-full">
                         <span class="text-base font-medium">SEO</span><span class="font-medium text-gary">90 %</span>
                     </div>
@@ -164,25 +166,26 @@
                 </div>
             </div>
             <div class="flex flex-col gap-5 justify-center items-center">
-                <img class="size-[100px]" src="files/Code.png" alt="Code">
+                <img class="wow animate__animated animate__slideInLeft size-[100px]" src="files/Code.png" alt="Code">
                 <h6 class="text-2xl font-semibold">Web Design</h6>
             </div>
-            <p class="text-center font-semibold text-base col-start-1 col-end-2 ">Nulla vitae elit libero, a pharetra augue. Donec id elit non
+            <p class="text-center font-semibold text-base col-start-1 col-end-2 ">Nulla vitae elit libero, a pharetra
+                augue. Donec id elit non
                 mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.</p>
             <div class="flex flex-col gap-5 justify-center items-center col-start-2 col-end-3 row-start-2 row-end-3">
-                <img class="size-[100px]" src="files/Mobile.png" alt="Code">
+                <img class="wow animate__animated animate__slideInRight  size-[100px]" src="files/Mobile.png" alt="Code">
                 <h6 class="text-2xl font-semibold">Web Design</h6>
             </div>
             <p class="text-center font-semibold text-base ">Nulla vitae elit libero, a pharetra augue. Donec id elit non
                 mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.</p>
             <div class="flex flex-col gap-5 justify-center items-center col-start-3  row-start-2 row-end-3">
-                <img class="size-[100px]" src="files/Web Design.png" alt="Code">
+                <img class="wow animate__animated animate__slideInLeft size-[100px]" src="files/Web Design.png" alt="Code">
                 <h6 class="text-2xl font-semibold">Web Design</h6>
             </div>
             <p class="text-center font-semibold text-base ">Nulla vitae elit libero, a pharetra augue. Donec id elit non
                 mi porta gravida at eget metus. Cras justo cum sociis natoque magnis.</p>
             <div class="flex flex-col gap-5 justify-center items-center col-start-4 row-start-2 ">
-                <img class="size-[100px]" src="files/SEO.png" alt="Code">
+                <img class="wow animate__animated animate__slideInRight size-[100px]" src="files/SEO.png" alt="Code">
                 <h6 class="text-2xl font-semibold">Web Design</h6>
             </div>
             <p class="text-center font-semibold text-base ">Nulla vitae elit libero, a pharetra augue. Donec id elit non
@@ -200,8 +203,9 @@
                     Projects</button>
             </div>
         </div>
-        <section class="bg-grayNormal grid grid-cols-2 gapx-5 gap-24 grid-rows-2  w-full py-20 px-14 || max-sm:flex max-sm:flex-col max-sm:px-4 max-sm:bg-white max-sm:py-5 max-sm:gap-0 ">
-            <div class="flex flex-col gap-3 || max-sm:w-full max-sm:bg-lightPurple max-sm:py-7 max-sm:px-4">
+        <section
+            class="bg-grayNormal grid grid-cols-2 gapx-5 gap-24 grid-rows-2  w-full py-20 px-14 || max-sm:flex max-sm:flex-col max-sm:px-4 max-sm:bg-white max-sm:py-5 max-sm:gap-0 ">
+            <div class="wow animate__animated animate__slideInLeft flex flex-col gap-3 || max-sm:w-full max-sm:bg-lightPurple max-sm:py-7 max-sm:px-4">
                 <h6 class="text-xs text-darkPurple font-semibold">Web Design</h6>
                 <h5 class="text-2xl font-semibold ">Snowlake Theme</h5>
                 <p class="font-light text-xs">Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.
@@ -213,7 +217,7 @@
             </div>
             <div></div>
             <div></div>
-            <div class="flex flex-col gap-3 || max-sm:w-full max-sm:bg-lightBlu max-sm:py-7 max-sm:px-4 max-sm:mt-7 ">
+            <div class="wow animate__animated animate__slideInRight flex flex-col gap-3 || max-sm:w-full max-sm:bg-lightBlu max-sm:py-7 max-sm:px-4 max-sm:mt-7 ">
                 <h6 class="text-xs text-darkPurple font-semibold">Mobile Design</h6>
                 <h5 class="text-2xl font-semibold ">Budget App</h5>
                 <p class="font-light text-xs">Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.
@@ -224,8 +228,9 @@
                 </div>
             </div>
         </section>
-        <section class="flex justify-around border-b-2 border-grayNormal w-full h-[740px] px-8 py-16 || max-sm:gap-5 max-sm:flex-col max-sm:bg-white max-sm:px-5 max-sm:py-7">
-            <div class="h-[616px] w-[444px] p-16 bg-green || max-sm:w-full max-sm:py-7 max-sm:px-4 ">
+        <section
+            class="flex justify-around border-b-2 border-grayNormal w-full h-[740px] px-8 py-16 || max-sm:gap-5 max-sm:flex-col max-sm:bg-white max-sm:px-5 max-sm:py-7">
+            <div class="wow animate__animated animate__slideInLeft h-[616px] w-[444px] p-16 bg-green || max-sm:w-full max-sm:py-7 max-sm:px-4 ">
                 <div class="flex flex-col gap-3">
                     <h6 class="text-xs text-darkPurple font-semibold">Web Design</h6>
                     <h5 class="text-2xl font-semibold ">Missio Theme</h5>
@@ -237,7 +242,7 @@
                     </div>
                 </div>
             </div>
-            <div class="h-[616px] w-[444px] p-16 bg-green || max-sm:w-full max-sm:py-7 max-sm:px-4 ">
+            <div class="wow animate__animated animate__slideInRight h-[616px] w-[444px] p-16 bg-green || max-sm:w-full max-sm:py-7 max-sm:px-4 ">
                 <div class="flex flex-col gap-3">
                     <h6 class="text-xs text-darkPurple font-semibold">Mobile Design</h6>
                     <h5 class="text-2xl font-semibold ">Storage App</h5>
@@ -254,8 +259,9 @@
     <footer class=" w-full flex flex-col gap-10 h-[472px] px-8 py-11 || max-sm:h-auto">
         <div class="flex gap-5  w-full h-[340px] bg-pinkLight px-8 py-11 || max-sm:flex-col max-sm:h-auto">
             <div class="flex flex-col w-[60%] gap-3 || max-sm:w-full">
-                <img class="w-14 h-14" src="files/Envelope.png">
-                <h5 class="text-5xl font-semibold || max-sm:text-3xl ">If you like what you see, let's work together.</h5>
+                <img class=" wow animate__animated animate__rubberBand w-14 h-14" src="files/Envelope.png">
+                <h5 class="text-5xl font-semibold || max-sm:text-3xl ">If you like what you see, let's work together.
+                </h5>
                 <p class="text-base font-normal">I bring rapid solutions to make the life of my clients easier. Have any
                     questions? Reach out to me from this contact form and I will get back to you shortly.</p>
             </div>
@@ -265,7 +271,8 @@
                     <input class="p-1 w-full h-10 bg-white rounded-sm" type="text" placeholder="LastName">
                 </div>
                 <textarea class="bg-white resize-none outline-0 p-1 fill-neutral-50" cols="30" rows="9"></textarea>
-                <button class=" mt-5 py-3 border-2 border-pink rounded-full text-pink text-xl font-semibold" type="button">Send Message</button>
+                <button class=" mt-5 py-3 border-2 border-pink rounded-full text-pink text-xl font-semibold"
+                    type="button">Send Message</button>
             </div>
         </div>
         <div class="flex w-full justify-between || max-sm:flex-col max-sm:gap-5">
@@ -289,7 +296,11 @@
             </div>
         </div>
     </footer>
-    <script src="Js/App.js"></script>
+    <script src="js/App.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 
 </html>
